@@ -20,6 +20,27 @@
     <path id="run.ArraysExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
+    <path id="run.InheritanceExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.StaticExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.AbstractExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.PolymorphismExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.PolymorphismExample (1).classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.DowncastingExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.VideoGameExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -69,6 +90,41 @@
     <target name="ArraysExample">
         <java classname="program.ArraysExample" failonerror="true" fork="yes">
             <classpath refid="run.ArraysExample.classpath"/>
+        </java>
+    </target>
+    <target name="InheritanceExample">
+        <java classname="inheritance.InheritanceExample" failonerror="true" fork="yes">
+            <classpath refid="run.InheritanceExample.classpath"/>
+        </java>
+    </target>
+    <target name="StaticExample">
+        <java classname="examples.StaticExample" failonerror="true" fork="yes">
+            <classpath refid="run.StaticExample.classpath"/>
+        </java>
+    </target>
+    <target name="AbstractExample">
+        <java classname="examples.AbstractExample" failonerror="true" fork="yes">
+            <classpath refid="run.AbstractExample.classpath"/>
+        </java>
+    </target>
+    <target name="PolymorphismExample">
+        <java classname="examples.PolymorphismExample" failonerror="true" fork="yes">
+            <classpath refid="run.PolymorphismExample.classpath"/>
+        </java>
+    </target>
+    <target name="PolymorphismExample (1)">
+        <java classname="polymorphism.PolymorphismExample" failonerror="true" fork="yes">
+            <classpath refid="run.PolymorphismExample (1).classpath"/>
+        </java>
+    </target>
+    <target name="DowncastingExample">
+        <java classname="casting.DowncastingExample" failonerror="true" fork="yes">
+            <classpath refid="run.DowncastingExample.classpath"/>
+        </java>
+    </target>
+    <target name="VideoGameExample">
+        <java classname="casting.VideoGameExample" failonerror="true" fork="yes">
+            <classpath refid="run.VideoGameExample.classpath"/>
         </java>
     </target>
 </project>
