@@ -14,31 +14,43 @@
     <path id="run.RobotTester.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
-    <path id="run.ForLoopExample.classpath">
+    <path id="run.PolymorphismExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
-    <path id="run.ArraysExample.classpath">
-        <path refid="FirstProgram.classpath"/>
-    </path>
-    <path id="run.InheritanceExample.classpath">
+    <path id="run.VideoGameExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
     <path id="run.StaticExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
-    <path id="run.AbstractExample.classpath">
+    <path id="run.ForLoopExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
-    <path id="run.PolymorphismExample.classpath">
-        <path refid="FirstProgram.classpath"/>
-    </path>
-    <path id="run.PolymorphismExample (1).classpath">
+    <path id="run.InheritanceExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
     <path id="run.DowncastingExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
-    <path id="run.VideoGameExample.classpath">
+    <path id="run.ArraysExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.PolymorphismExample (1).classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.AbstractExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.InterfacesExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.InterfacesExample (1).classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.InterfacesExample (2).classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.Java8InterfaceExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
     <target name="init">
@@ -82,19 +94,14 @@
             <classpath refid="run.RobotTester.classpath"/>
         </java>
     </target>
-    <target name="ForLoopExample">
-        <java classname="program.ForLoopExample" failonerror="true" fork="yes">
-            <classpath refid="run.ForLoopExample.classpath"/>
+    <target name="PolymorphismExample">
+        <java classname="examples.PolymorphismExample" failonerror="true" fork="yes">
+            <classpath refid="run.PolymorphismExample.classpath"/>
         </java>
     </target>
-    <target name="ArraysExample">
-        <java classname="program.ArraysExample" failonerror="true" fork="yes">
-            <classpath refid="run.ArraysExample.classpath"/>
-        </java>
-    </target>
-    <target name="InheritanceExample">
-        <java classname="inheritance.InheritanceExample" failonerror="true" fork="yes">
-            <classpath refid="run.InheritanceExample.classpath"/>
+    <target name="VideoGameExample">
+        <java classname="casting.VideoGameExample" failonerror="true" fork="yes">
+            <classpath refid="run.VideoGameExample.classpath"/>
         </java>
     </target>
     <target name="StaticExample">
@@ -102,19 +109,14 @@
             <classpath refid="run.StaticExample.classpath"/>
         </java>
     </target>
-    <target name="AbstractExample">
-        <java classname="examples.AbstractExample" failonerror="true" fork="yes">
-            <classpath refid="run.AbstractExample.classpath"/>
+    <target name="ForLoopExample">
+        <java classname="program.ForLoopExample" failonerror="true" fork="yes">
+            <classpath refid="run.ForLoopExample.classpath"/>
         </java>
     </target>
-    <target name="PolymorphismExample">
-        <java classname="examples.PolymorphismExample" failonerror="true" fork="yes">
-            <classpath refid="run.PolymorphismExample.classpath"/>
-        </java>
-    </target>
-    <target name="PolymorphismExample (1)">
-        <java classname="polymorphism.PolymorphismExample" failonerror="true" fork="yes">
-            <classpath refid="run.PolymorphismExample (1).classpath"/>
+    <target name="InheritanceExample">
+        <java classname="inheritance.InheritanceExample" failonerror="true" fork="yes">
+            <classpath refid="run.InheritanceExample.classpath"/>
         </java>
     </target>
     <target name="DowncastingExample">
@@ -122,9 +124,39 @@
             <classpath refid="run.DowncastingExample.classpath"/>
         </java>
     </target>
-    <target name="VideoGameExample">
-        <java classname="casting.VideoGameExample" failonerror="true" fork="yes">
-            <classpath refid="run.VideoGameExample.classpath"/>
+    <target name="ArraysExample">
+        <java classname="program.ArraysExample" failonerror="true" fork="yes">
+            <classpath refid="run.ArraysExample.classpath"/>
+        </java>
+    </target>
+    <target name="PolymorphismExample (1)">
+        <java classname="polymorphism.PolymorphismExample" failonerror="true" fork="yes">
+            <classpath refid="run.PolymorphismExample (1).classpath"/>
+        </java>
+    </target>
+    <target name="AbstractExample">
+        <java classname="examples.AbstractExample" failonerror="true" fork="yes">
+            <classpath refid="run.AbstractExample.classpath"/>
+        </java>
+    </target>
+    <target name="InterfacesExample">
+        <java classname="interfaces.InterfacesExample" failonerror="true" fork="yes">
+            <classpath refid="run.InterfacesExample.classpath"/>
+        </java>
+    </target>
+    <target name="InterfacesExample (1)">
+        <java classname="examples.InterfacesExample" failonerror="true" fork="yes">
+            <classpath refid="run.InterfacesExample (1).classpath"/>
+        </java>
+    </target>
+    <target name="InterfacesExample (2)">
+        <java classname="interfaces.InterfacesExample" failonerror="true" fork="yes">
+            <classpath refid="run.InterfacesExample (2).classpath"/>
+        </java>
+    </target>
+    <target name="Java8InterfaceExample">
+        <java classname="Java8InterfaceExample.Java8InterfaceExample" failonerror="true" fork="yes">
+            <classpath refid="run.Java8InterfaceExample.classpath"/>
         </java>
     </target>
 </project>
