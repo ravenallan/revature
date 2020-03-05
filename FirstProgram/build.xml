@@ -53,6 +53,12 @@
     <path id="run.Java8InterfaceExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
+    <path id="run.ExceptionsTest.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
+    <path id="run.CheckedExceptionExample.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -157,6 +163,16 @@
     <target name="Java8InterfaceExample">
         <java classname="Java8InterfaceExample.Java8InterfaceExample" failonerror="true" fork="yes">
             <classpath refid="run.Java8InterfaceExample.classpath"/>
+        </java>
+    </target>
+    <target name="ExceptionsTest">
+        <java classname="exceptions.ExceptionsTest" failonerror="true" fork="yes">
+            <classpath refid="run.ExceptionsTest.classpath"/>
+        </java>
+    </target>
+    <target name="CheckedExceptionExample">
+        <java classname="exceptions.CheckedExceptionExample" failonerror="true" fork="yes">
+            <classpath refid="run.CheckedExceptionExample.classpath"/>
         </java>
     </target>
 </project>
