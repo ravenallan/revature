@@ -59,6 +59,9 @@
     <path id="run.CheckedExceptionExample.classpath">
         <path refid="FirstProgram.classpath"/>
     </path>
+    <path id="run.ObjectTest.classpath">
+        <path refid="FirstProgram.classpath"/>
+    </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -173,6 +176,11 @@
     <target name="CheckedExceptionExample">
         <java classname="exceptions.CheckedExceptionExample" failonerror="true" fork="yes">
             <classpath refid="run.CheckedExceptionExample.classpath"/>
+        </java>
+    </target>
+    <target name="ObjectTest">
+        <java classname="examples.ObjectTest" failonerror="true" fork="yes">
+            <classpath refid="run.ObjectTest.classpath"/>
         </java>
     </target>
 </project>
