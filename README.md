@@ -5,6 +5,17 @@
 
 <br>
 
+###  Java
+
+##### Annotations
+
+- Begin with `@` symbol, no semicolon`;`
+- Provides info to compiler and 3rd party tools about how their subjects should be treated
+
+One of the few pre-defined annotations is `@Override` which indicates to the compiler that the annotated method should override a method inherited from a superclass.
+
+<br>
+
 ## Changelog
 
 | Version | Date     | Description |
