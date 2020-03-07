@@ -32,6 +32,7 @@ The simplest way to Marshal an object is to convert its state to a stream of byt
 
 | Version | Date     | Description |
 |---------|----------|-------------|
+| 1.0.0   | 03-06-20 | Java Course Complete |
 | 0.0.4   | 03-06-20 | Added Java `Collections`, `Maps`, `Generics`, `Annotations`, `Marshalling` Examples & Notes |
 | 0.0.3   | 03-04-20 | Added Java `Interfaces`, `Exceptions`, `Object` Examples |
 | 0.0.2   | 03-04-20 | Added Java `Inheritance`, `Keywords`, `Polymorphism`, `Casting` Examples |
